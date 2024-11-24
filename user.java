@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class User  {
-       public Connection onectarBD(){
+       public Connection conectarBD(){
             Connection conn = null;
             try{
                  class.forName("com.mysql.Driver.Manager").newInstance();
