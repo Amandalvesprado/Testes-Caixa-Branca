@@ -4,7 +4,9 @@
 Esta branch implementa a **ETAPA 3** do projeto, onde foram realizados os seguintes passos:
 
 - Criado o grafo de fluxo com a identificação dos nós e arestas do código.
+  
 - Calculada a complexidade ciclomática do código (resultado: 3).
+  
 - Identificados e descritos os 4 caminhos independentes que o código pode percorrer.
 
 # Grafo de fluxo com a identificação dos nós e arestas do código
@@ -14,17 +16,23 @@ Esta branch implementa a **ETAPA 3** do projeto, onde foram realizados os seguin
 # Calculada a complexidade ciclomática do código
 
 Complexidade Ciclomática
+
 A complexidade ciclomática é calculada pela fórmula:
 
 𝑀 = 𝐸 − 𝑁 +2𝑃
 
 E: Número de arestas (conexões entre os nós).
+
 N: Número de nós.
+
 P: Número de componentes conexos (neste caso, é 1, pois temos um único grafo).
 
 Com base no grafo:
+
 Número de Nós (N): 12.
+
 Número de Arestas (E): 13.
+
 Número de Componentes Conexos (P): 1.
 
 M =  E - N + 2P
