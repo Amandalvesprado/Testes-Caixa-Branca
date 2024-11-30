@@ -1,42 +1,32 @@
-# Testes-Caixa-Branca
-Atividade sobre Testes Caixa Branca da Disciplina UI/UX E Testes de Software 2024/2
+# Projeto de Teste de Caixa Branca - ETAPA 4
 
+Este repositório contém um projeto de teste de caixa branca que foi desenvolvido para validar a implementação de métodos de verificação de usuário em um banco de dados.
 
-*ETAPA 1*
+## Etapas realizadas
 
-Erros encontrados: 
+### Etapa 1 - **Análise de Código**
+A análise do código inicial foi realizada para identificar possíveis falhas e melhorias no tratamento de exceções e na validação de usuários.
 
-**1. SQL**
-Construir a query SQL usando concatenação e não ela realizar ela de uma vez só utilizando o PreparedStatement para evitar SQL Injection (ameaça de segurança que se aproveita de vulnerabilidades em sistemas que trabalham com bases de dados realizando ataques com comandos SQL)
-Como está: 
-     "sql += "select nome from usuarios"; 
-              sql += "where login =  " + " ' "  + login + " ' "; 
-              sql += " and senha = " + " ' "  + senha+ " ' ;"; "
-Como poderia ser: 
-String sql = "SELECT nome FROM usuarios WHERE login = ? AND senha = ?";
-PreparedStatement pst = conn.prepareStatement(sql);
-pst.setString(1, login);
-pst.setString(2, senha);
+### Etapa 2 - **Preenchimento da Planilha**
+Foram gerados o grafo de fluxo e calculada a complexidade ciclômática do código, com o objetivo de mapear os caminhos possíveis dentro da aplicação.
 
-**2.Classe Driver Errada**
-A linha onde se é declara a classe driver está incorreta, se o codigo for rodado com a linha 'class.forName("com.mysql.Driver.Manager").newInstance();' acontecerá um erro de execução. 
-Como poderia ser: 
-    Class.forName("com.mysql.cj.jdbc.Driver");
+### Etapa 3 -  **Grafo de Fluxo e Complexidade Ciclomática**
+Foram gerados o grafo de fluxo e calculada a complexidade ciclômática do código, com o objetivo de mapear os caminhos possíveis dentro da aplicação.
 
-**3.Tratamentos de Exceções**
-Na linha 32, o código captura exceções mas não fornece as informações necessarias, duficultado a depuração 
-Como está:
-     catch (Exception e) { }
-Como poderia ser: 
-     catch (Exception e) {
-        e.printStackTrace();
-}
+### Etapa 4 - **Criação da Branch, Javadoc e Documentação**
+Foi criada a branch `ETAPA 4` para incluir a documentação e a explicação do funcionamento do código. Todos os métodos e variáveis estão devidamente documentados usando o Javadoc.
+O código foi documentado com o uso de Javadoc, seguindo as boas práticas de documentação. Comentários para classes, métodos e variáveis foram adicionados para facilitar a compreensão do código.
 
-**4.Conexões não Fechadas**
-No codigo não é realizada o fechamendo das conexões Connection, Statement e ResultSet. Oque pode causar vazamento de recursos e prejudicar o desempenho do sistema.
+## Como rodar o projeto
 
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/SeuUsuario/Testes-Caixa-Branca.git
+    ```
 
-*ETAPA 2*
+2. Abra o projeto em sua IDE favorita, como o VSCode ou IntelliJ.
 
-Preenchimento do formulário de TESTE ESTÁTICO 
+3. Certifique-se de ter o MySQL rodando localmente na porta padrão (3306) e crie um banco de dados `test`.
+
+4. Compile e execute o código.
 
