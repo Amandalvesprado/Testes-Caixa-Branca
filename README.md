@@ -28,9 +28,14 @@ Número de Arestas (E): 13.
 Número de Componentes Conexos (P): 1.
 
 M =  E - N + 2P
+
 M = 13 - 12 + 2 x 1
+
 M = 13 - 12 + 2
+
 M = 1 + 2
+
+
 M = 3
 
  # 𝑀 = 13 − 12 + 2 × 1 = 3
@@ -47,7 +52,7 @@ A complexidade ciclomática do código é 3.
 
 - Caminho 3, segue o fluxo onde a consulta não retorna nenhum resultado:
   
-(1)Início → (2)Declara conexão → (3)Tenta conectar → (5)Retorna conexão → (6)Declara Query → (7)Chama conectarBD → (8)Monta query SQL → (9)Criação de Statement e execução da query → (10)Verifica se a query retornou resultados →  Não entra no if  → (12)Retorna resultado.
+(1)Início → (2)Declara conexão → (3)Tenta conectar → (5)Retorna conexão → (6)Declara Query → (7)Chama conectarBD → (8)Monta query SQL → (9)Criação de Statement e execução da query → (10)Verifica se a query retornou resultados →  Não entra no if  → (12)Retorna resultado(null).
 
 
 
