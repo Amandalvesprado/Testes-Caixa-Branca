@@ -8,7 +8,7 @@ Este repositório contém um projeto de teste de caixa branca que foi desenvolvi
 A análise do código inicial foi realizada para identificar possíveis falhas e melhorias no tratamento de exceções e na validação de usuários.
 
 ### Etapa 2 - **Preenchimento da Planilha**
-Foram gerados o grafo de fluxo e calculada a complexidade ciclômática do código, com o objetivo de mapear os caminhos possíveis dentro da aplicação.
+Após a identificação dos erros e possiveis falhas, faça o preenchimento do formulário de TESTE ESTÁTICO
 
 ### Etapa 3 -  **Grafo de Fluxo e Complexidade Ciclomática**
 Foram gerados o grafo de fluxo e calculada a complexidade ciclômática do código, com o objetivo de mapear os caminhos possíveis dentro da aplicação.
@@ -21,7 +21,7 @@ O código foi documentado com o uso de Javadoc, seguindo as boas práticas de do
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/SeuUsuario/Testes-Caixa-Branca.git
+    git clone https://github.com/Amandalvesprado/Testes-Caixa-Branca.git
     ```
 
 2. Abra o projeto em sua IDE favorita, como o VSCode ou IntelliJ.
