@@ -6,7 +6,10 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 /**
- * Classe responsável por gerenciar a autenticação de usuários em um sistema.
+ * Classe responsável por gerenciar a autenticação de usuários em um 
+ * 
+ * 
+ * sistema.
  * Contém métodos para conectar ao banco de dados e verificar credenciais de login.
  */
 public class User {
